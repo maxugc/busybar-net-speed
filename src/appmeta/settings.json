@@ -1,0 +1,19 @@
+{
+    "format_version": 1,
+    "version": 1,
+    "fields": {
+        "helper": {
+            "type": "string",
+            "label": "Helper address (optional)",
+            "description": "Leave empty: the helper tells the bar where it is. Fill in only if that doesn't work, for example 192.168.1.50:8791.",
+            "default": "",
+            "max_length": 64
+        },
+        "demo": {
+            "type": "boolean",
+            "label": "Demo data",
+            "description": "Show made-up results instead of using the helper.",
+            "default": false
+        }
+    }
+}

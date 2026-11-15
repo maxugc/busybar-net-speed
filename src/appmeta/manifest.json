@@ -1,0 +1,9 @@
+{
+    "format_version": 1,
+    "id": "io.github.maxugc.netspeed",
+    "name": "Net Speed",
+    "version": "1.0.0",
+    "api_version": "27.15.0",
+    "description": "Tap Start to test your internet speed. Needs the helper program on a computer on your network.",
+    "author": "maxugc"
+}

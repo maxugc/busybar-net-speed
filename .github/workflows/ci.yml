@@ -1,0 +1,33 @@
+name: CI
+
+# Builds Net Speed with BUSY's official tool (busy-cli build), the same build the
+# BUSY Apps Catalog runs, and keeps the package as a download.
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: io.github.maxugc.netspeed
+          path: dist/*.tgz
