@@ -25,10 +25,12 @@ No helper yet? The app has a demo: press Start on the setup screen, or turn on
 ## Set it up
 
 1. **Install the app.** From the BUSY Apps Catalog, or download
-   `io.github.maxugc.netspeed.tgz` from this repository's Releases, open your
-   bar's web page, go to **Apps**, click **+ Add app** and upload the file.
-2. **Run the helper.** Download [`helper/netspeed_helper.py`](helper/netspeed_helper.py)
-   and start it. It needs Python 3.8 or newer and nothing else.
+   [`io.github.maxugc.netspeed.tgz`](https://github.com/maxugc/busybar-net-speed/releases/latest/download/io.github.maxugc.netspeed.tgz)
+   from this repository's Releases, open your bar's web page, go to **Apps**,
+   click **+ Add app**, upload the file, then click **Install app** to confirm.
+2. **Run the helper.** Download [`netspeed_helper.py`](https://github.com/maxugc/busybar-net-speed/releases/latest/download/netspeed_helper.py)
+   (the same file as [`helper/netspeed_helper.py`](helper/netspeed_helper.py) in
+   this repository) and start it. It needs Python 3.8 or newer and nothing else.
 
    ```sh
    python3 netspeed_helper.py
